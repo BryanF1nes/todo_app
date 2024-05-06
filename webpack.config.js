@@ -13,7 +13,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Development",
+      title: "Todo App",
       template: "./src/index.html",
       filename: "index.html",
       inject: "body",
