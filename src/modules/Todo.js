@@ -2,7 +2,7 @@ export const Todo = (title, description, dueDate, priority) => {
   return { title, description, dueDate, priority };
 };
 
-export const TodoList = () => {
+const TodoList = () => {
   const todolist = [];
 
   const addTodo = (todo, project) => {
@@ -11,8 +11,10 @@ export const TodoList = () => {
   };
 
   const getTodos = () => {
-    console.log(todolist);
+    return todolist;
   };
 
   return { addTodo, getTodos };
 };
+
+export const todolist = TodoList();

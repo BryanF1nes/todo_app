@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --text: #03030b;
+  --background: #f3f2fc;
+  --primary: #463ecb;
+  --secondary: #df8a8d;
+  --accent: #d7b56c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0, auto;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter";
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+}
+
+small {
+  font-size: 0.75rem; /* 12px */
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  border-bottom: 1px solid var(--primary);
+  margin: 0;
+  padding: 10px;
+}
+
+form input {
+  font-size: 1.033rem;
+  padding: 5px;
+}
+
+form select {
+  font-size: 1.033rem;
+  padding: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background: var(--primary);
+  color: white;
+  font-size: 1.033rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 200ms ease-out;
+}
+
+form button:hover {
+  background-color: var(--accent);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid var(--primary);
+  padding: 20px;
+}
