@@ -2,7 +2,7 @@ import { Todo, todolist } from "../modules/Todo.js";
 import { logMessage } from "../modules/logging.js";
 import renderTodos from "./RenderTodo.js";
 
-const root = document.querySelector("#root");
+export const root = document.querySelector("#root");
 
 export const createForm = () => {
   const formInputs = ["Title", "Description", "Date"];

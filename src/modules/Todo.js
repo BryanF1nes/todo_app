@@ -14,7 +14,11 @@ const TodoList = () => {
     return todolist;
   };
 
-  return { addTodo, getTodos };
+  const removeTodo = (element) => {
+    todolist.splice(element, 1);
+  };
+
+  return { addTodo, getTodos, removeTodo };
 };
 
 export const todolist = TodoList();
